@@ -23,7 +23,7 @@ def uploads():
             'content': content
         })
         upload(posts)
-        file.save(f"uploads/{filename}")
+        file.save(f"uploads/images/{filename}")
         if filename.split()[-1] not in ["jpeg", "jpg", "png"]:
             logging.info("Не подходящее расширение")
     except FileNotFoundError:
